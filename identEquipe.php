@@ -1,27 +1,25 @@
 <?php
 
-if (!class_exists("identEquipe", false)) 
-{
-class identEquipe
-{
+if (!class_exists("identEquipe", false)) {
 
-  /**
-   * 
-   * @var ct_identEquipe $identificacaoEquipe
-   * @access public
-   */
-  public $identificacaoEquipe = null;
+    class identEquipe {
 
-  /**
-   * 
-   * @param ct_identEquipe $identificacaoEquipe
-   * @access public
-   */
-  public function __construct($identificacaoEquipe)
-  {
-    $this->identificacaoEquipe = $identificacaoEquipe;
-  }
+        /**
+         * 
+         * @var ct_identEquipe $identificacaoEquipe
+         * @access public
+         */
+        public $identificacaoEquipe = null;
 
-}
+        /**
+         * 
+         * @param ct_identEquipe $identificacaoEquipe
+         * @access public
+         */
+        public function __construct($identificacaoEquipe) {
+            $this->identificacaoEquipe = $identificacaoEquipe;
+        }
+
+    }
 
 }

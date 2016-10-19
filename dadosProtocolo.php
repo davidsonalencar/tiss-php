@@ -1,19 +1,17 @@
 <?php
 
-if (!class_exists("dadosProtocolo", false)) 
-{
-class dadosProtocolo
-{
+if (!class_exists("dadosProtocolo", false)) {
 
-  /**
-   * 
-   * @access public
-   */
-  public function __construct()
-  {
-  
-  }
+    class dadosProtocolo {
 
-}
+        /**
+         * 
+         * @access public
+         */
+        public function __construct() {
+            
+        }
+
+    }
 
 }

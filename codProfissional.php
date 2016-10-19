@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("codProfissional", false)) 
-{
-class codProfissional
-{
+if (!class_exists("codProfissional", false)) {
 
-  /**
-   * 
-   * @var string $cpfContratado
-   * @access public
-   */
-  public $cpfContratado = null;
+    class codProfissional {
 
-  /**
-   * 
-   * @var string $codigoPrestadorNaOperadora
-   * @access public
-   */
-  public $codigoPrestadorNaOperadora = null;
+        /**
+         * 
+         * @var string $cpfContratado
+         * @access public
+         */
+        public $cpfContratado = null;
 
-  /**
-   * 
-   * @param string $cpfContratado
-   * @param string $codigoPrestadorNaOperadora
-   * @access public
-   */
-  public function __construct($cpfContratado, $codigoPrestadorNaOperadora)
-  {
-    $this->cpfContratado = $cpfContratado;
-    $this->codigoPrestadorNaOperadora = $codigoPrestadorNaOperadora;
-  }
+        /**
+         * 
+         * @var string $codigoPrestadorNaOperadora
+         * @access public
+         */
+        public $codigoPrestadorNaOperadora = null;
 
-}
+        /**
+         * 
+         * @param string $cpfContratado
+         * @param string $codigoPrestadorNaOperadora
+         * @access public
+         */
+        public function __construct($cpfContratado, $codigoPrestadorNaOperadora) {
+            $this->cpfContratado = $cpfContratado;
+            $this->codigoPrestadorNaOperadora = $codigoPrestadorNaOperadora;
+        }
+
+    }
 
 }

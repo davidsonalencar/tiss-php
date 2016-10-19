@@ -1,45 +1,43 @@
 <?php
 
-if (!class_exists("cancelaGuiaWS", false)) 
-{
-class cancelaGuiaWS
-{
+if (!class_exists("cancelaGuiaWS", false)) {
 
-  /**
-   * 
-   * @var cabecalhoTransacao $cabecalho
-   * @access public
-   */
-  public $cabecalho = null;
+    class cancelaGuiaWS {
 
-  /**
-   * 
-   * @var ct_guiaCancelamento $cancelaGuia
-   * @access public
-   */
-  public $cancelaGuia = null;
+        /**
+         * 
+         * @var cabecalhoTransacao $cabecalho
+         * @access public
+         */
+        public $cabecalho = null;
 
-  /**
-   * 
-   * @var string $hash
-   * @access public
-   */
-  public $hash = null;
+        /**
+         * 
+         * @var ct_guiaCancelamento $cancelaGuia
+         * @access public
+         */
+        public $cancelaGuia = null;
 
-  /**
-   * 
-   * @param cabecalhoTransacao $cabecalho
-   * @param ct_guiaCancelamento $cancelaGuia
-   * @param string $hash
-   * @access public
-   */
-  public function __construct($cabecalho, $cancelaGuia, $hash)
-  {
-    $this->cabecalho = $cabecalho;
-    $this->cancelaGuia = $cancelaGuia;
-    $this->hash = $hash;
-  }
+        /**
+         * 
+         * @var string $hash
+         * @access public
+         */
+        public $hash = null;
 
-}
+        /**
+         * 
+         * @param cabecalhoTransacao $cabecalho
+         * @param ct_guiaCancelamento $cancelaGuia
+         * @param string $hash
+         * @access public
+         */
+        public function __construct($cabecalho, $cancelaGuia, $hash) {
+            $this->cabecalho = $cabecalho;
+            $this->cancelaGuia = $cancelaGuia;
+            $this->hash = $hash;
+        }
+
+    }
 
 }

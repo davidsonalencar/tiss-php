@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("dadosContratado", false)) 
-{
-class dadosContratado
-{
+if (!class_exists("dadosContratado", false)) {
 
-  /**
-   * 
-   * @var ct_contratadoDados $dadosPrestador
-   * @access public
-   */
-  public $dadosPrestador = null;
+    class dadosContratado {
 
-  /**
-   * 
-   * @var string $CNES
-   * @access public
-   */
-  public $CNES = null;
+        /**
+         * 
+         * @var ct_contratadoDados $dadosPrestador
+         * @access public
+         */
+        public $dadosPrestador = null;
 
-  /**
-   * 
-   * @param ct_contratadoDados $dadosPrestador
-   * @param string $CNES
-   * @access public
-   */
-  public function __construct($dadosPrestador, $CNES)
-  {
-    $this->dadosPrestador = $dadosPrestador;
-    $this->CNES = $CNES;
-  }
+        /**
+         * 
+         * @var string $CNES
+         * @access public
+         */
+        public $CNES = null;
 
-}
+        /**
+         * 
+         * @param ct_contratadoDados $dadosPrestador
+         * @param string $CNES
+         * @access public
+         */
+        public function __construct($dadosPrestador, $CNES) {
+            $this->dadosPrestador = $dadosPrestador;
+            $this->CNES = $CNES;
+        }
+
+    }
 
 }

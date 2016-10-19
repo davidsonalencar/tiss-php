@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("despesa", false)) 
-{
-class despesa
-{
+if (!class_exists("despesa", false)) {
 
-  /**
-   * 
-   * @var dm_outrasDespesas $codigoDespesa
-   * @access public
-   */
-  public $codigoDespesa = null;
+    class despesa {
 
-  /**
-   * 
-   * @var ct_procedimentoExecutadoOutras $servicosExecutados
-   * @access public
-   */
-  public $servicosExecutados = null;
+        /**
+         * 
+         * @var dm_outrasDespesas $codigoDespesa
+         * @access public
+         */
+        public $codigoDespesa = null;
 
-  /**
-   * 
-   * @param dm_outrasDespesas $codigoDespesa
-   * @param ct_procedimentoExecutadoOutras $servicosExecutados
-   * @access public
-   */
-  public function __construct($codigoDespesa, $servicosExecutados)
-  {
-    $this->codigoDespesa = $codigoDespesa;
-    $this->servicosExecutados = $servicosExecutados;
-  }
+        /**
+         * 
+         * @var ct_procedimentoExecutadoOutras $servicosExecutados
+         * @access public
+         */
+        public $servicosExecutados = null;
 
-}
+        /**
+         * 
+         * @param dm_outrasDespesas $codigoDespesa
+         * @param ct_procedimentoExecutadoOutras $servicosExecutados
+         * @access public
+         */
+        public function __construct($codigoDespesa, $servicosExecutados) {
+            $this->codigoDespesa = $codigoDespesa;
+            $this->servicosExecutados = $servicosExecutados;
+        }
+
+    }
 
 }

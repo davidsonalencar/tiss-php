@@ -1,27 +1,25 @@
 <?php
 
-if (!class_exists("contratadoExecutante", false)) 
-{
-class contratadoExecutante
-{
+if (!class_exists("contratadoExecutante", false)) {
 
-  /**
-   * 
-   * @var string $CNES
-   * @access public
-   */
-  public $CNES = null;
+    class contratadoExecutante {
 
-  /**
-   * 
-   * @param string $CNES
-   * @access public
-   */
-  public function __construct($CNES)
-  {
-    $this->CNES = $CNES;
-  }
+        /**
+         * 
+         * @var string $CNES
+         * @access public
+         */
+        public $CNES = null;
 
-}
+        /**
+         * 
+         * @param string $CNES
+         * @access public
+         */
+        public function __construct($CNES) {
+            $this->CNES = $CNES;
+        }
+
+    }
 
 }

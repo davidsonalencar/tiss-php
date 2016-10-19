@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("ct_recebimentoRecurso", false)) 
-{
-class ct_recebimentoRecurso
-{
+if (!class_exists("ct_recebimentoRecurso", false)) {
 
-  /**
-   * 
-   * @var ct_motivoGlosa $mensagemErro
-   * @access public
-   */
-  public $mensagemErro = null;
+    class ct_recebimentoRecurso {
 
-  /**
-   * 
-   * @var ct_recursoGlosaRecebimento $protocoloRecebimento
-   * @access public
-   */
-  public $protocoloRecebimento = null;
+        /**
+         * 
+         * @var ct_motivoGlosa $mensagemErro
+         * @access public
+         */
+        public $mensagemErro = null;
 
-  /**
-   * 
-   * @param ct_motivoGlosa $mensagemErro
-   * @param ct_recursoGlosaRecebimento $protocoloRecebimento
-   * @access public
-   */
-  public function __construct($mensagemErro, $protocoloRecebimento)
-  {
-    $this->mensagemErro = $mensagemErro;
-    $this->protocoloRecebimento = $protocoloRecebimento;
-  }
+        /**
+         * 
+         * @var ct_recursoGlosaRecebimento $protocoloRecebimento
+         * @access public
+         */
+        public $protocoloRecebimento = null;
 
-}
+        /**
+         * 
+         * @param ct_motivoGlosa $mensagemErro
+         * @param ct_recursoGlosaRecebimento $protocoloRecebimento
+         * @access public
+         */
+        public function __construct($mensagemErro, $protocoloRecebimento) {
+            $this->mensagemErro = $mensagemErro;
+            $this->protocoloRecebimento = $protocoloRecebimento;
+        }
+
+    }
 
 }

@@ -1,63 +1,61 @@
 <?php
 
-if (!class_exists("ct_protocoloRecebimento", false)) 
-{
-class ct_protocoloRecebimento
-{
+if (!class_exists("ct_protocoloRecebimento", false)) {
 
-  /**
-   * 
-   * @var string $registroANS
-   * @access public
-   */
-  public $registroANS = null;
+    class ct_protocoloRecebimento {
 
-  /**
-   * 
-   * @var ct_contratadoDados $dadosPrestador
-   * @access public
-   */
-  public $dadosPrestador = null;
+        /**
+         * 
+         * @var string $registroANS
+         * @access public
+         */
+        public $registroANS = null;
 
-  /**
-   * 
-   * @var string $numeroLote
-   * @access public
-   */
-  public $numeroLote = null;
+        /**
+         * 
+         * @var ct_contratadoDados $dadosPrestador
+         * @access public
+         */
+        public $dadosPrestador = null;
 
-  /**
-   * 
-   * @var date $dataEnvioLote
-   * @access public
-   */
-  public $dataEnvioLote = null;
+        /**
+         * 
+         * @var string $numeroLote
+         * @access public
+         */
+        public $numeroLote = null;
 
-  /**
-   * 
-   * @var ct_protocoloDetalhe $detalheProtocolo
-   * @access public
-   */
-  public $detalheProtocolo = null;
+        /**
+         * 
+         * @var date $dataEnvioLote
+         * @access public
+         */
+        public $dataEnvioLote = null;
 
-  /**
-   * 
-   * @param string $registroANS
-   * @param ct_contratadoDados $dadosPrestador
-   * @param string $numeroLote
-   * @param date $dataEnvioLote
-   * @param ct_protocoloDetalhe $detalheProtocolo
-   * @access public
-   */
-  public function __construct($registroANS, $dadosPrestador, $numeroLote, $dataEnvioLote, $detalheProtocolo)
-  {
-    $this->registroANS = $registroANS;
-    $this->dadosPrestador = $dadosPrestador;
-    $this->numeroLote = $numeroLote;
-    $this->dataEnvioLote = $dataEnvioLote;
-    $this->detalheProtocolo = $detalheProtocolo;
-  }
+        /**
+         * 
+         * @var ct_protocoloDetalhe $detalheProtocolo
+         * @access public
+         */
+        public $detalheProtocolo = null;
 
-}
+        /**
+         * 
+         * @param string $registroANS
+         * @param ct_contratadoDados $dadosPrestador
+         * @param string $numeroLote
+         * @param date $dataEnvioLote
+         * @param ct_protocoloDetalhe $detalheProtocolo
+         * @access public
+         */
+        public function __construct($registroANS, $dadosPrestador, $numeroLote, $dataEnvioLote, $detalheProtocolo) {
+            $this->registroANS = $registroANS;
+            $this->dadosPrestador = $dadosPrestador;
+            $this->numeroLote = $numeroLote;
+            $this->dataEnvioLote = $dataEnvioLote;
+            $this->detalheProtocolo = $detalheProtocolo;
+        }
+
+    }
 
 }

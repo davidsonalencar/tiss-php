@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("dadosGuiasProtocolo", false)) 
-{
-class dadosGuiasProtocolo
-{
+if (!class_exists("dadosGuiasProtocolo", false)) {
 
-  /**
-   * 
-   * @var ct_guiaDadosOdonto $dadosGuiasOdonto
-   * @access public
-   */
-  public $dadosGuiasOdonto = null;
+    class dadosGuiasProtocolo {
 
-  /**
-   * 
-   * @var ct_guiaDados $dadosGuias
-   * @access public
-   */
-  public $dadosGuias = null;
+        /**
+         * 
+         * @var ct_guiaDadosOdonto $dadosGuiasOdonto
+         * @access public
+         */
+        public $dadosGuiasOdonto = null;
 
-  /**
-   * 
-   * @param ct_guiaDadosOdonto $dadosGuiasOdonto
-   * @param ct_guiaDados $dadosGuias
-   * @access public
-   */
-  public function __construct($dadosGuiasOdonto, $dadosGuias)
-  {
-    $this->dadosGuiasOdonto = $dadosGuiasOdonto;
-    $this->dadosGuias = $dadosGuias;
-  }
+        /**
+         * 
+         * @var ct_guiaDados $dadosGuias
+         * @access public
+         */
+        public $dadosGuias = null;
 
-}
+        /**
+         * 
+         * @param ct_guiaDadosOdonto $dadosGuiasOdonto
+         * @param ct_guiaDados $dadosGuias
+         * @access public
+         */
+        public function __construct($dadosGuiasOdonto, $dadosGuias) {
+            $this->dadosGuiasOdonto = $dadosGuiasOdonto;
+            $this->dadosGuias = $dadosGuias;
+        }
+
+    }
 
 }

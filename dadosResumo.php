@@ -1,27 +1,25 @@
 <?php
 
-if (!class_exists("dadosResumo", false)) 
-{
-class dadosResumo
-{
+if (!class_exists("dadosResumo", false)) {
 
-  /**
-   * 
-   * @var ct_dadosResumoDemonstrativo $relacaoProtocolos
-   * @access public
-   */
-  public $relacaoProtocolos = null;
+    class dadosResumo {
 
-  /**
-   * 
-   * @param ct_dadosResumoDemonstrativo $relacaoProtocolos
-   * @access public
-   */
-  public function __construct($relacaoProtocolos)
-  {
-    $this->relacaoProtocolos = $relacaoProtocolos;
-  }
+        /**
+         * 
+         * @var ct_dadosResumoDemonstrativo $relacaoProtocolos
+         * @access public
+         */
+        public $relacaoProtocolos = null;
 
-}
+        /**
+         * 
+         * @param ct_dadosResumoDemonstrativo $relacaoProtocolos
+         * @access public
+         */
+        public function __construct($relacaoProtocolos) {
+            $this->relacaoProtocolos = $relacaoProtocolos;
+        }
+
+    }
 
 }

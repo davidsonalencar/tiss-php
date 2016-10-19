@@ -1,45 +1,43 @@
 <?php
 
-if (!class_exists("loteRecursoGlosaWS", false)) 
-{
-class loteRecursoGlosaWS
-{
+if (!class_exists("loteRecursoGlosaWS", false)) {
 
-  /**
-   * 
-   * @var cabecalhoTransacao $cabecalho
-   * @access public
-   */
-  public $cabecalho = null;
+    class loteRecursoGlosaWS {
 
-  /**
-   * 
-   * @var ct_guiaRecursoLote $loteRecurso
-   * @access public
-   */
-  public $loteRecurso = null;
+        /**
+         * 
+         * @var cabecalhoTransacao $cabecalho
+         * @access public
+         */
+        public $cabecalho = null;
 
-  /**
-   * 
-   * @var string $hash
-   * @access public
-   */
-  public $hash = null;
+        /**
+         * 
+         * @var ct_guiaRecursoLote $loteRecurso
+         * @access public
+         */
+        public $loteRecurso = null;
 
-  /**
-   * 
-   * @param cabecalhoTransacao $cabecalho
-   * @param ct_guiaRecursoLote $loteRecurso
-   * @param string $hash
-   * @access public
-   */
-  public function __construct($cabecalho, $loteRecurso, $hash)
-  {
-    $this->cabecalho = $cabecalho;
-    $this->loteRecurso = $loteRecurso;
-    $this->hash = $hash;
-  }
+        /**
+         * 
+         * @var string $hash
+         * @access public
+         */
+        public $hash = null;
 
-}
+        /**
+         * 
+         * @param cabecalhoTransacao $cabecalho
+         * @param ct_guiaRecursoLote $loteRecurso
+         * @param string $hash
+         * @access public
+         */
+        public function __construct($cabecalho, $loteRecurso, $hash) {
+            $this->cabecalho = $cabecalho;
+            $this->loteRecurso = $loteRecurso;
+            $this->hash = $hash;
+        }
+
+    }
 
 }

@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("recursoGuiaCompleta", false)) 
-{
-class recursoGuiaCompleta
-{
+if (!class_exists("recursoGuiaCompleta", false)) {
 
-  /**
-   * 
-   * @var dm_tipoGlosa $codGlosaGuia
-   * @access public
-   */
-  public $codGlosaGuia = null;
+    class recursoGuiaCompleta {
 
-  /**
-   * 
-   * @var string $justificativaGuia
-   * @access public
-   */
-  public $justificativaGuia = null;
+        /**
+         * 
+         * @var dm_tipoGlosa $codGlosaGuia
+         * @access public
+         */
+        public $codGlosaGuia = null;
 
-  /**
-   * 
-   * @param dm_tipoGlosa $codGlosaGuia
-   * @param string $justificativaGuia
-   * @access public
-   */
-  public function __construct($codGlosaGuia, $justificativaGuia)
-  {
-    $this->codGlosaGuia = $codGlosaGuia;
-    $this->justificativaGuia = $justificativaGuia;
-  }
+        /**
+         * 
+         * @var string $justificativaGuia
+         * @access public
+         */
+        public $justificativaGuia = null;
 
-}
+        /**
+         * 
+         * @param dm_tipoGlosa $codGlosaGuia
+         * @param string $justificativaGuia
+         * @access public
+         */
+        public function __construct($codGlosaGuia, $justificativaGuia) {
+            $this->codGlosaGuia = $codGlosaGuia;
+            $this->justificativaGuia = $justificativaGuia;
+        }
+
+    }
 
 }

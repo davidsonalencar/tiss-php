@@ -34,81 +34,77 @@ include_once('PGPDataType.php');
 include_once('SPKIDataType.php');
 include_once('ObjectType.php');
 
-
 /**
  * <b><font size=4>WebService para consumo dos prestadores no padrão TISS</font></b>
  * 
  */
-class TissVerificaElegibilidade extends \SoapClient
-{
+class TissVerificaElegibilidade extends \SoapClient {
 
-  /**
-   * 
-   * @var array $classmap The defined classes
-   * @access private
-   */
-  private static $classmap = array(
-    'pedidoElegibilidadeWS' => '\\pedidoElegibilidadeWS',
-    'cabecalhoTransacao' => '\\cabecalhoTransacao',
-    'identificacaoTransacao' => '\\identificacaoTransacao',
-    'origem' => '\\origem',
-    'identificacaoPrestador' => '\\identificacaoPrestador',
-    'destino' => '\\destino',
-    'ct_prestadorIdentificacao' => '\\ct_prestadorIdentificacao',
-    'assinaturaDigital' => '\\assinaturaDigital',
-    'ct_loginSenha' => '\\ct_loginSenha',
-    'ct_elegibilidadeVerifica' => '\\ct_elegibilidadeVerifica',
-    'ct_contratadoDados' => '\\ct_contratadoDados',
-    'respostaElegibilidadeWS' => '\\respostaElegibilidadeWS',
-    'ct_respostaElegibilidade' => '\\ct_respostaElegibilidade',
-    'ct_motivoGlosa' => '\\ct_motivoGlosa',
-    'ct_elegibilidadeRecibo' => '\\ct_elegibilidadeRecibo',
-    'SignatureType' => '\\SignatureType',
-    'SignedInfoType' => '\\SignedInfoType',
-    'CanonicalizationMethodType' => '\\CanonicalizationMethodType',
-    'SignatureMethodType' => '\\SignatureMethodType',
-    'ReferenceType' => '\\ReferenceType',
-    'TransformType' => '\\TransformType',
-    'DigestMethodType' => '\\DigestMethodType',
-    'SignatureValueType' => '\\SignatureValueType',
-    'KeyInfoType' => '\\KeyInfoType',
-    'KeyValueType' => '\\KeyValueType',
-    'DSAKeyValueType' => '\\DSAKeyValueType',
-    'RSAKeyValueType' => '\\RSAKeyValueType',
-    'RetrievalMethodType' => '\\RetrievalMethodType',
-    'X509DataType' => '\\X509DataType',
-    'X509IssuerSerialType' => '\\X509IssuerSerialType',
-    'PGPDataType' => '\\PGPDataType',
-    'SPKIDataType' => '\\SPKIDataType',
-    'ObjectType' => '\\ObjectType');
+    /**
+     * 
+     * @var array $classmap The defined classes
+     * @access private
+     */
+    private static $classmap = array(
+        'pedidoElegibilidadeWS' => '\\pedidoElegibilidadeWS',
+        'cabecalhoTransacao' => '\\cabecalhoTransacao',
+        'identificacaoTransacao' => '\\identificacaoTransacao',
+        'origem' => '\\origem',
+        'identificacaoPrestador' => '\\identificacaoPrestador',
+        'destino' => '\\destino',
+        'ct_prestadorIdentificacao' => '\\ct_prestadorIdentificacao',
+        'assinaturaDigital' => '\\assinaturaDigital',
+        'ct_loginSenha' => '\\ct_loginSenha',
+        'ct_elegibilidadeVerifica' => '\\ct_elegibilidadeVerifica',
+        'ct_contratadoDados' => '\\ct_contratadoDados',
+        'respostaElegibilidadeWS' => '\\respostaElegibilidadeWS',
+        'ct_respostaElegibilidade' => '\\ct_respostaElegibilidade',
+        'ct_motivoGlosa' => '\\ct_motivoGlosa',
+        'ct_elegibilidadeRecibo' => '\\ct_elegibilidadeRecibo',
+        'SignatureType' => '\\SignatureType',
+        'SignedInfoType' => '\\SignedInfoType',
+        'CanonicalizationMethodType' => '\\CanonicalizationMethodType',
+        'SignatureMethodType' => '\\SignatureMethodType',
+        'ReferenceType' => '\\ReferenceType',
+        'TransformType' => '\\TransformType',
+        'DigestMethodType' => '\\DigestMethodType',
+        'SignatureValueType' => '\\SignatureValueType',
+        'KeyInfoType' => '\\KeyInfoType',
+        'KeyValueType' => '\\KeyValueType',
+        'DSAKeyValueType' => '\\DSAKeyValueType',
+        'RSAKeyValueType' => '\\RSAKeyValueType',
+        'RetrievalMethodType' => '\\RetrievalMethodType',
+        'X509DataType' => '\\X509DataType',
+        'X509IssuerSerialType' => '\\X509IssuerSerialType',
+        'PGPDataType' => '\\PGPDataType',
+        'SPKIDataType' => '\\SPKIDataType',
+        'ObjectType' => '\\ObjectType');
 
-  /**
-   * 
-   * @param array $options A array of config values
-   * @param string $wsdl The wsdl file to use
-   * @access public
-   */
-  public function __construct(array $options = array(), $wsdl = 'http://wstiss.qualysystem.com.br/V3_00_01/tissVerificaElegibilidade.asmx?wsdl')
-  {
-    foreach (self::$classmap as $key => $value) {
-      if (!isset($options['classmap'][$key])) {
-        $options['classmap'][$key] = $value;
-      }
+    /**
+     * 
+     * @param array $options A array of config values
+     * @param string $wsdl The wsdl file to use
+     * @access public
+     */
+    public function __construct(array $options = array(), $wsdl = 'http://wstiss.qualysystem.com.br/V3_00_01/tissVerificaElegibilidade.asmx?wsdl') {
+        foreach (self::$classmap as $key => $value) {
+            if (!isset($options['classmap'][$key])) {
+                $options['classmap'][$key] = $value;
+            }
+        }
+
+        parent::__construct($wsdl, $options);
     }
-    
-    parent::__construct($wsdl, $options);
-  }
 
-  /**
-   * Método extraído de interface dos wsdl (implementa-se o xsd tisswebservicesv3_00_01)
-   * 
-   * @param pedidoElegibilidadeWS $pedidoElegibilidadeWS
-   * @access public
-   * @return respostaElegibilidadeWS
-   */
-  public function tissVerificaElegibilidade_Operation(pedidoElegibilidadeWS $pedidoElegibilidadeWS)
-  {
-    return $this->__soapCall('tissVerificaElegibilidade_Operation', array($pedidoElegibilidadeWS));
-  }
+    /**
+     * Método extraído de interface dos wsdl (implementa-se o xsd tisswebservicesv3_00_01)
+     * 
+     * @param pedidoElegibilidadeWS $pedidoElegibilidadeWS
+     * @access public
+     * @return respostaElegibilidadeWS
+     */
+    public function tissVerificaElegibilidade_Operation(pedidoElegibilidadeWS $pedidoElegibilidadeWS) {
+        return $this->__soapCall('tissVerificaElegibilidade_Operation', array($pedidoElegibilidadeWS));
+    }
 
 }

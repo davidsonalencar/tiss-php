@@ -1,45 +1,43 @@
 <?php
 
-if (!class_exists("dadosSolicitacao", false)) 
-{
-class dadosSolicitacao
-{
+if (!class_exists("dadosSolicitacao", false)) {
 
-  /**
-   * 
-   * @var date $dataSolicitacao
-   * @access public
-   */
-  public $dataSolicitacao = null;
+    class dadosSolicitacao {
 
-  /**
-   * 
-   * @var dm_caraterAtendimento $caraterAtendimento
-   * @access public
-   */
-  public $caraterAtendimento = null;
+        /**
+         * 
+         * @var date $dataSolicitacao
+         * @access public
+         */
+        public $dataSolicitacao = null;
 
-  /**
-   * 
-   * @var string $indicacaoClinica
-   * @access public
-   */
-  public $indicacaoClinica = null;
+        /**
+         * 
+         * @var dm_caraterAtendimento $caraterAtendimento
+         * @access public
+         */
+        public $caraterAtendimento = null;
 
-  /**
-   * 
-   * @param date $dataSolicitacao
-   * @param dm_caraterAtendimento $caraterAtendimento
-   * @param string $indicacaoClinica
-   * @access public
-   */
-  public function __construct($dataSolicitacao, $caraterAtendimento, $indicacaoClinica)
-  {
-    $this->dataSolicitacao = $dataSolicitacao;
-    $this->caraterAtendimento = $caraterAtendimento;
-    $this->indicacaoClinica = $indicacaoClinica;
-  }
+        /**
+         * 
+         * @var string $indicacaoClinica
+         * @access public
+         */
+        public $indicacaoClinica = null;
 
-}
+        /**
+         * 
+         * @param date $dataSolicitacao
+         * @param dm_caraterAtendimento $caraterAtendimento
+         * @param string $indicacaoClinica
+         * @access public
+         */
+        public function __construct($dataSolicitacao, $caraterAtendimento, $indicacaoClinica) {
+            $this->dataSolicitacao = $dataSolicitacao;
+            $this->caraterAtendimento = $caraterAtendimento;
+            $this->indicacaoClinica = $indicacaoClinica;
+        }
+
+    }
 
 }

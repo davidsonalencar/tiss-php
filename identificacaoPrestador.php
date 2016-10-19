@@ -1,15 +1,13 @@
 <?php
 
-class identificacaoPrestador
-{
+class identificacaoPrestador {
 
-  /**
-   * 
-   * @access public
-   */
-  public function __construct()
-  {
-  
-  }
+    /**
+     * 
+     * @access public
+     */
+    public function __construct() {
+        
+    }
 
 }

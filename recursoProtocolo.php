@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("recursoProtocolo", false)) 
-{
-class recursoProtocolo
-{
+if (!class_exists("recursoProtocolo", false)) {
 
-  /**
-   * 
-   * @var dm_tipoGlosa $codigoGlosaProtocolo
-   * @access public
-   */
-  public $codigoGlosaProtocolo = null;
+    class recursoProtocolo {
 
-  /**
-   * 
-   * @var string $justificativaProtocolo
-   * @access public
-   */
-  public $justificativaProtocolo = null;
+        /**
+         * 
+         * @var dm_tipoGlosa $codigoGlosaProtocolo
+         * @access public
+         */
+        public $codigoGlosaProtocolo = null;
 
-  /**
-   * 
-   * @param dm_tipoGlosa $codigoGlosaProtocolo
-   * @param string $justificativaProtocolo
-   * @access public
-   */
-  public function __construct($codigoGlosaProtocolo, $justificativaProtocolo)
-  {
-    $this->codigoGlosaProtocolo = $codigoGlosaProtocolo;
-    $this->justificativaProtocolo = $justificativaProtocolo;
-  }
+        /**
+         * 
+         * @var string $justificativaProtocolo
+         * @access public
+         */
+        public $justificativaProtocolo = null;
 
-}
+        /**
+         * 
+         * @param dm_tipoGlosa $codigoGlosaProtocolo
+         * @param string $justificativaProtocolo
+         * @access public
+         */
+        public function __construct($codigoGlosaProtocolo, $justificativaProtocolo) {
+            $this->codigoGlosaProtocolo = $codigoGlosaProtocolo;
+            $this->justificativaProtocolo = $justificativaProtocolo;
+        }
+
+    }
 
 }

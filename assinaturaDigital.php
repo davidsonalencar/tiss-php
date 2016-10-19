@@ -1,15 +1,13 @@
 <?php
 
-class assinaturaDigital
-{
+class assinaturaDigital {
 
-  /**
-   * 
-   * @access public
-   */
-  public function __construct()
-  {
-  
-  }
+    /**
+     * 
+     * @access public
+     */
+    public function __construct() {
+        
+    }
 
 }

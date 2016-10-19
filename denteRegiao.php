@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("denteRegiao", false)) 
-{
-class denteRegiao
-{
+if (!class_exists("denteRegiao", false)) {
 
-  /**
-   * 
-   * @var dm_regiao $codRegiao
-   * @access public
-   */
-  public $codRegiao = null;
+    class denteRegiao {
 
-  /**
-   * 
-   * @var dm_dente $codDente
-   * @access public
-   */
-  public $codDente = null;
+        /**
+         * 
+         * @var dm_regiao $codRegiao
+         * @access public
+         */
+        public $codRegiao = null;
 
-  /**
-   * 
-   * @param dm_regiao $codRegiao
-   * @param dm_dente $codDente
-   * @access public
-   */
-  public function __construct($codRegiao, $codDente)
-  {
-    $this->codRegiao = $codRegiao;
-    $this->codDente = $codDente;
-  }
+        /**
+         * 
+         * @var dm_dente $codDente
+         * @access public
+         */
+        public $codDente = null;
 
-}
+        /**
+         * 
+         * @param dm_regiao $codRegiao
+         * @param dm_dente $codDente
+         * @access public
+         */
+        public function __construct($codRegiao, $codDente) {
+            $this->codRegiao = $codRegiao;
+            $this->codDente = $codDente;
+        }
+
+    }
 
 }

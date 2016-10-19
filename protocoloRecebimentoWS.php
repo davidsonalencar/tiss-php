@@ -1,45 +1,43 @@
 <?php
 
-if (!class_exists("protocoloRecebimentoWS", false)) 
-{
-class protocoloRecebimentoWS
-{
+if (!class_exists("protocoloRecebimentoWS", false)) {
 
-  /**
-   * 
-   * @var cabecalhoTransacao $cabecalho
-   * @access public
-   */
-  public $cabecalho = null;
+    class protocoloRecebimentoWS {
 
-  /**
-   * 
-   * @var ct_recebimentoLote $recebimentoLote
-   * @access public
-   */
-  public $recebimentoLote = null;
+        /**
+         * 
+         * @var cabecalhoTransacao $cabecalho
+         * @access public
+         */
+        public $cabecalho = null;
 
-  /**
-   * 
-   * @var string $hash
-   * @access public
-   */
-  public $hash = null;
+        /**
+         * 
+         * @var ct_recebimentoLote $recebimentoLote
+         * @access public
+         */
+        public $recebimentoLote = null;
 
-  /**
-   * 
-   * @param cabecalhoTransacao $cabecalho
-   * @param ct_recebimentoLote $recebimentoLote
-   * @param string $hash
-   * @access public
-   */
-  public function __construct($cabecalho, $recebimentoLote, $hash)
-  {
-    $this->cabecalho = $cabecalho;
-    $this->recebimentoLote = $recebimentoLote;
-    $this->hash = $hash;
-  }
+        /**
+         * 
+         * @var string $hash
+         * @access public
+         */
+        public $hash = null;
 
-}
+        /**
+         * 
+         * @param cabecalhoTransacao $cabecalho
+         * @param ct_recebimentoLote $recebimentoLote
+         * @param string $hash
+         * @access public
+         */
+        public function __construct($cabecalho, $recebimentoLote, $hash) {
+            $this->cabecalho = $cabecalho;
+            $this->recebimentoLote = $recebimentoLote;
+            $this->hash = $hash;
+        }
+
+    }
 
 }

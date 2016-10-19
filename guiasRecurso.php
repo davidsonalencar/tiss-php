@@ -1,45 +1,43 @@
 <?php
 
-if (!class_exists("guiasRecurso", false)) 
-{
-class guiasRecurso
-{
+if (!class_exists("guiasRecurso", false)) {
 
-  /**
-   * 
-   * @var string $numeroGuiaOrigem
-   * @access public
-   */
-  public $numeroGuiaOrigem = null;
+    class guiasRecurso {
 
-  /**
-   * 
-   * @var string $senha
-   * @access public
-   */
-  public $senha = null;
+        /**
+         * 
+         * @var string $numeroGuiaOrigem
+         * @access public
+         */
+        public $numeroGuiaOrigem = null;
 
-  /**
-   * 
-   * @var opcaoRecursoGuia $opcaoRecursoGuia
-   * @access public
-   */
-  public $opcaoRecursoGuia = null;
+        /**
+         * 
+         * @var string $senha
+         * @access public
+         */
+        public $senha = null;
 
-  /**
-   * 
-   * @param string $numeroGuiaOrigem
-   * @param string $senha
-   * @param opcaoRecursoGuia $opcaoRecursoGuia
-   * @access public
-   */
-  public function __construct($numeroGuiaOrigem, $senha, $opcaoRecursoGuia)
-  {
-    $this->numeroGuiaOrigem = $numeroGuiaOrigem;
-    $this->senha = $senha;
-    $this->opcaoRecursoGuia = $opcaoRecursoGuia;
-  }
+        /**
+         * 
+         * @var opcaoRecursoGuia $opcaoRecursoGuia
+         * @access public
+         */
+        public $opcaoRecursoGuia = null;
 
-}
+        /**
+         * 
+         * @param string $numeroGuiaOrigem
+         * @param string $senha
+         * @param opcaoRecursoGuia $opcaoRecursoGuia
+         * @access public
+         */
+        public function __construct($numeroGuiaOrigem, $senha, $opcaoRecursoGuia) {
+            $this->numeroGuiaOrigem = $numeroGuiaOrigem;
+            $this->senha = $senha;
+            $this->opcaoRecursoGuia = $opcaoRecursoGuia;
+        }
+
+    }
 
 }

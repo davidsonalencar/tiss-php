@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("ct_reciboCancelaGuia", false)) 
-{
-class ct_reciboCancelaGuia
-{
+if (!class_exists("ct_reciboCancelaGuia", false)) {
 
-  /**
-   * 
-   * @var ct_motivoGlosa $mensagemErro
-   * @access public
-   */
-  public $mensagemErro = null;
+    class ct_reciboCancelaGuia {
 
-  /**
-   * 
-   * @var ct_guiaCancelamentoRecibo $reciboCancelaGuia
-   * @access public
-   */
-  public $reciboCancelaGuia = null;
+        /**
+         * 
+         * @var ct_motivoGlosa $mensagemErro
+         * @access public
+         */
+        public $mensagemErro = null;
 
-  /**
-   * 
-   * @param ct_motivoGlosa $mensagemErro
-   * @param ct_guiaCancelamentoRecibo $reciboCancelaGuia
-   * @access public
-   */
-  public function __construct($mensagemErro, $reciboCancelaGuia)
-  {
-    $this->mensagemErro = $mensagemErro;
-    $this->reciboCancelaGuia = $reciboCancelaGuia;
-  }
+        /**
+         * 
+         * @var ct_guiaCancelamentoRecibo $reciboCancelaGuia
+         * @access public
+         */
+        public $reciboCancelaGuia = null;
 
-}
+        /**
+         * 
+         * @param ct_motivoGlosa $mensagemErro
+         * @param ct_guiaCancelamentoRecibo $reciboCancelaGuia
+         * @access public
+         */
+        public function __construct($mensagemErro, $reciboCancelaGuia) {
+            $this->mensagemErro = $mensagemErro;
+            $this->reciboCancelaGuia = $reciboCancelaGuia;
+        }
+
+    }
 
 }

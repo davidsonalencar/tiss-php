@@ -1,63 +1,61 @@
 <?php
 
-if (!class_exists("ct_demonstrativoCabecalho", false)) 
-{
-class ct_demonstrativoCabecalho
-{
+if (!class_exists("ct_demonstrativoCabecalho", false)) {
 
-  /**
-   * 
-   * @var string $registroANS
-   * @access public
-   */
-  public $registroANS = null;
+    class ct_demonstrativoCabecalho {
 
-  /**
-   * 
-   * @var string $numeroDemonstrativo
-   * @access public
-   */
-  public $numeroDemonstrativo = null;
+        /**
+         * 
+         * @var string $registroANS
+         * @access public
+         */
+        public $registroANS = null;
 
-  /**
-   * 
-   * @var string $nomeOperadora
-   * @access public
-   */
-  public $nomeOperadora = null;
+        /**
+         * 
+         * @var string $numeroDemonstrativo
+         * @access public
+         */
+        public $numeroDemonstrativo = null;
 
-  /**
-   * 
-   * @var string $numeroCNPJ
-   * @access public
-   */
-  public $numeroCNPJ = null;
+        /**
+         * 
+         * @var string $nomeOperadora
+         * @access public
+         */
+        public $nomeOperadora = null;
 
-  /**
-   * 
-   * @var date $dataEmissao
-   * @access public
-   */
-  public $dataEmissao = null;
+        /**
+         * 
+         * @var string $numeroCNPJ
+         * @access public
+         */
+        public $numeroCNPJ = null;
 
-  /**
-   * 
-   * @param string $registroANS
-   * @param string $numeroDemonstrativo
-   * @param string $nomeOperadora
-   * @param string $numeroCNPJ
-   * @param date $dataEmissao
-   * @access public
-   */
-  public function __construct($registroANS, $numeroDemonstrativo, $nomeOperadora, $numeroCNPJ, $dataEmissao)
-  {
-    $this->registroANS = $registroANS;
-    $this->numeroDemonstrativo = $numeroDemonstrativo;
-    $this->nomeOperadora = $nomeOperadora;
-    $this->numeroCNPJ = $numeroCNPJ;
-    $this->dataEmissao = $dataEmissao;
-  }
+        /**
+         * 
+         * @var date $dataEmissao
+         * @access public
+         */
+        public $dataEmissao = null;
 
-}
+        /**
+         * 
+         * @param string $registroANS
+         * @param string $numeroDemonstrativo
+         * @param string $nomeOperadora
+         * @param string $numeroCNPJ
+         * @param date $dataEmissao
+         * @access public
+         */
+        public function __construct($registroANS, $numeroDemonstrativo, $nomeOperadora, $numeroCNPJ, $dataEmissao) {
+            $this->registroANS = $registroANS;
+            $this->numeroDemonstrativo = $numeroDemonstrativo;
+            $this->nomeOperadora = $nomeOperadora;
+            $this->numeroCNPJ = $numeroCNPJ;
+            $this->dataEmissao = $dataEmissao;
+        }
+
+    }
 
 }

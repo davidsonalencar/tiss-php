@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("opcaoRecursoGuia", false)) 
-{
-class opcaoRecursoGuia
-{
+if (!class_exists("opcaoRecursoGuia", false)) {
 
-  /**
-   * 
-   * @var itensGuia $itensGuia
-   * @access public
-   */
-  public $itensGuia = null;
+    class opcaoRecursoGuia {
 
-  /**
-   * 
-   * @var recursoGuia $recursoGuia
-   * @access public
-   */
-  public $recursoGuia = null;
+        /**
+         * 
+         * @var itensGuia $itensGuia
+         * @access public
+         */
+        public $itensGuia = null;
 
-  /**
-   * 
-   * @param itensGuia $itensGuia
-   * @param recursoGuia $recursoGuia
-   * @access public
-   */
-  public function __construct($itensGuia, $recursoGuia)
-  {
-    $this->itensGuia = $itensGuia;
-    $this->recursoGuia = $recursoGuia;
-  }
+        /**
+         * 
+         * @var recursoGuia $recursoGuia
+         * @access public
+         */
+        public $recursoGuia = null;
 
-}
+        /**
+         * 
+         * @param itensGuia $itensGuia
+         * @param recursoGuia $recursoGuia
+         * @access public
+         */
+        public function __construct($itensGuia, $recursoGuia) {
+            $this->itensGuia = $itensGuia;
+            $this->recursoGuia = $recursoGuia;
+        }
+
+    }
 
 }

@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("periodo", false)) 
-{
-class periodo
-{
+if (!class_exists("periodo", false)) {
 
-  /**
-   * 
-   * @var date $dataInicial
-   * @access public
-   */
-  public $dataInicial = null;
+    class periodo {
 
-  /**
-   * 
-   * @var date $dataFinal
-   * @access public
-   */
-  public $dataFinal = null;
+        /**
+         * 
+         * @var date $dataInicial
+         * @access public
+         */
+        public $dataInicial = null;
 
-  /**
-   * 
-   * @param date $dataInicial
-   * @param date $dataFinal
-   * @access public
-   */
-  public function __construct($dataInicial, $dataFinal)
-  {
-    $this->dataInicial = $dataInicial;
-    $this->dataFinal = $dataFinal;
-  }
+        /**
+         * 
+         * @var date $dataFinal
+         * @access public
+         */
+        public $dataFinal = null;
 
-}
+        /**
+         * 
+         * @param date $dataInicial
+         * @param date $dataFinal
+         * @access public
+         */
+        public function __construct($dataInicial, $dataFinal) {
+            $this->dataInicial = $dataInicial;
+            $this->dataFinal = $dataFinal;
+        }
+
+    }
 
 }

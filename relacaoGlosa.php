@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("relacaoGlosa", false)) 
-{
-class relacaoGlosa
-{
+if (!class_exists("relacaoGlosa", false)) {
 
-  /**
-   * 
-   * @var float $valorGlosa
-   * @access public
-   */
-  public $valorGlosa = null;
+    class relacaoGlosa {
 
-  /**
-   * 
-   * @var dm_tipoGlosa $tipoGlosa
-   * @access public
-   */
-  public $tipoGlosa = null;
+        /**
+         * 
+         * @var float $valorGlosa
+         * @access public
+         */
+        public $valorGlosa = null;
 
-  /**
-   * 
-   * @param float $valorGlosa
-   * @param dm_tipoGlosa $tipoGlosa
-   * @access public
-   */
-  public function __construct($valorGlosa, $tipoGlosa)
-  {
-    $this->valorGlosa = $valorGlosa;
-    $this->tipoGlosa = $tipoGlosa;
-  }
+        /**
+         * 
+         * @var dm_tipoGlosa $tipoGlosa
+         * @access public
+         */
+        public $tipoGlosa = null;
 
-}
+        /**
+         * 
+         * @param float $valorGlosa
+         * @param dm_tipoGlosa $tipoGlosa
+         * @access public
+         */
+        public function __construct($valorGlosa, $tipoGlosa) {
+            $this->valorGlosa = $valorGlosa;
+            $this->tipoGlosa = $tipoGlosa;
+        }
+
+    }
 
 }

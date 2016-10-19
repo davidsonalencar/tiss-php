@@ -1,45 +1,43 @@
 <?php
 
-if (!class_exists("solicitacaoDemonstrativoRetornoWS", false)) 
-{
-class solicitacaoDemonstrativoRetornoWS
-{
+if (!class_exists("solicitacaoDemonstrativoRetornoWS", false)) {
 
-  /**
-   * 
-   * @var cabecalhoTransacao $cabecalho
-   * @access public
-   */
-  public $cabecalho = null;
+    class solicitacaoDemonstrativoRetornoWS {
 
-  /**
-   * 
-   * @var ct_demonstrativoSolicitacao $solicitacaoDemonstrativoRetorno
-   * @access public
-   */
-  public $solicitacaoDemonstrativoRetorno = null;
+        /**
+         * 
+         * @var cabecalhoTransacao $cabecalho
+         * @access public
+         */
+        public $cabecalho = null;
 
-  /**
-   * 
-   * @var string $hash
-   * @access public
-   */
-  public $hash = null;
+        /**
+         * 
+         * @var ct_demonstrativoSolicitacao $solicitacaoDemonstrativoRetorno
+         * @access public
+         */
+        public $solicitacaoDemonstrativoRetorno = null;
 
-  /**
-   * 
-   * @param cabecalhoTransacao $cabecalho
-   * @param ct_demonstrativoSolicitacao $solicitacaoDemonstrativoRetorno
-   * @param string $hash
-   * @access public
-   */
-  public function __construct($cabecalho, $solicitacaoDemonstrativoRetorno, $hash)
-  {
-    $this->cabecalho = $cabecalho;
-    $this->solicitacaoDemonstrativoRetorno = $solicitacaoDemonstrativoRetorno;
-    $this->hash = $hash;
-  }
+        /**
+         * 
+         * @var string $hash
+         * @access public
+         */
+        public $hash = null;
 
-}
+        /**
+         * 
+         * @param cabecalhoTransacao $cabecalho
+         * @param ct_demonstrativoSolicitacao $solicitacaoDemonstrativoRetorno
+         * @param string $hash
+         * @access public
+         */
+        public function __construct($cabecalho, $solicitacaoDemonstrativoRetorno, $hash) {
+            $this->cabecalho = $cabecalho;
+            $this->solicitacaoDemonstrativoRetorno = $solicitacaoDemonstrativoRetorno;
+            $this->hash = $hash;
+        }
+
+    }
 
 }

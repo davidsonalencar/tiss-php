@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("dadosInternacao", false)) 
-{
-class dadosInternacao
-{
+if (!class_exists("dadosInternacao", false)) {
 
-  /**
-   * 
-   * @var date $dataInicioFaturamento
-   * @access public
-   */
-  public $dataInicioFaturamento = null;
+    class dadosInternacao {
 
-  /**
-   * 
-   * @var date $dataFimFaturamento
-   * @access public
-   */
-  public $dataFimFaturamento = null;
+        /**
+         * 
+         * @var date $dataInicioFaturamento
+         * @access public
+         */
+        public $dataInicioFaturamento = null;
 
-  /**
-   * 
-   * @param date $dataInicioFaturamento
-   * @param date $dataFimFaturamento
-   * @access public
-   */
-  public function __construct($dataInicioFaturamento, $dataFimFaturamento)
-  {
-    $this->dataInicioFaturamento = $dataInicioFaturamento;
-    $this->dataFimFaturamento = $dataFimFaturamento;
-  }
+        /**
+         * 
+         * @var date $dataFimFaturamento
+         * @access public
+         */
+        public $dataFimFaturamento = null;
 
-}
+        /**
+         * 
+         * @param date $dataInicioFaturamento
+         * @param date $dataFimFaturamento
+         * @access public
+         */
+        public function __construct($dataInicioFaturamento, $dataFimFaturamento) {
+            $this->dataInicioFaturamento = $dataInicioFaturamento;
+            $this->dataFimFaturamento = $dataFimFaturamento;
+        }
+
+    }
 
 }

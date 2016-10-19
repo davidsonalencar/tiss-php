@@ -1,27 +1,25 @@
 <?php
 
-if (!class_exists("cabecalhoGuia", false)) 
-{
-class cabecalhoGuia
-{
+if (!class_exists("cabecalhoGuia", false)) {
 
-  /**
-   * 
-   * @var string $guiaPrincipal
-   * @access public
-   */
-  public $guiaPrincipal = null;
+    class cabecalhoGuia {
 
-  /**
-   * 
-   * @param string $guiaPrincipal
-   * @access public
-   */
-  public function __construct($guiaPrincipal)
-  {
-    $this->guiaPrincipal = $guiaPrincipal;
-  }
+        /**
+         * 
+         * @var string $guiaPrincipal
+         * @access public
+         */
+        public $guiaPrincipal = null;
 
-}
+        /**
+         * 
+         * @param string $guiaPrincipal
+         * @access public
+         */
+        public function __construct($guiaPrincipal) {
+            $this->guiaPrincipal = $guiaPrincipal;
+        }
+
+    }
 
 }

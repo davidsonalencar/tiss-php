@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("ctm_guiaLote", false)) 
-{
-class ctm_guiaLote
-{
+if (!class_exists("ctm_guiaLote", false)) {
 
-  /**
-   * 
-   * @var string $numeroLote
-   * @access public
-   */
-  public $numeroLote = null;
+    class ctm_guiaLote {
 
-  /**
-   * 
-   * @var guiasTISS $guiasTISS
-   * @access public
-   */
-  public $guiasTISS = null;
+        /**
+         * 
+         * @var string $numeroLote
+         * @access public
+         */
+        public $numeroLote = null;
 
-  /**
-   * 
-   * @param string $numeroLote
-   * @param guiasTISS $guiasTISS
-   * @access public
-   */
-  public function __construct($numeroLote, $guiasTISS)
-  {
-    $this->numeroLote = $numeroLote;
-    $this->guiasTISS = $guiasTISS;
-  }
+        /**
+         * 
+         * @var guiasTISS $guiasTISS
+         * @access public
+         */
+        public $guiasTISS = null;
 
-}
+        /**
+         * 
+         * @param string $numeroLote
+         * @param guiasTISS $guiasTISS
+         * @access public
+         */
+        public function __construct($numeroLote, $guiasTISS) {
+            $this->numeroLote = $numeroLote;
+            $this->guiasTISS = $guiasTISS;
+        }
+
+    }
 
 }

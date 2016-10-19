@@ -1,36 +1,34 @@
 <?php
 
-if (!class_exists("periodoProc", false)) 
-{
-class periodoProc
-{
+if (!class_exists("periodoProc", false)) {
 
-  /**
-   * 
-   * @var date $datainicio
-   * @access public
-   */
-  public $datainicio = null;
+    class periodoProc {
 
-  /**
-   * 
-   * @var date $datafim
-   * @access public
-   */
-  public $datafim = null;
+        /**
+         * 
+         * @var date $datainicio
+         * @access public
+         */
+        public $datainicio = null;
 
-  /**
-   * 
-   * @param date $datainicio
-   * @param date $datafim
-   * @access public
-   */
-  public function __construct($datainicio, $datafim)
-  {
-    $this->datainicio = $datainicio;
-    $this->datafim = $datafim;
-  }
+        /**
+         * 
+         * @var date $datafim
+         * @access public
+         */
+        public $datafim = null;
 
-}
+        /**
+         * 
+         * @param date $datainicio
+         * @param date $datafim
+         * @access public
+         */
+        public function __construct($datainicio, $datafim) {
+            $this->datainicio = $datainicio;
+            $this->datafim = $datafim;
+        }
+
+    }
 
 }
